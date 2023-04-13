@@ -8,6 +8,12 @@ https://github.com/UniversalRobots/Universal_Robots_ROS_Driver
 
 https://github.com/Unity-Technologies/Unity-Robotics-Hub/tree/main/tutorials/ros_unity_integration
 
+3. Following Moveit Tutorial
+
+https://ros-planning.github.io/moveit_tutorials/doc/move_group_python_interface/move_group_python_interface_tutorial.html
+https://moveit.ros.org/documentation/concepts/
+
+
 ## 2. Run the code in ROS
 ```bash
 roslaunch ros_tcp_endpoint endpoint.launch
