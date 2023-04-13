@@ -37,8 +37,22 @@ ___Creating the new workspace of robot___
 Run the the UR10e robot with rg2 gripper workspace
 ```roslaunch dense_grasp ur10e_rg2_workspace.launch```
 
-## 4. Running control
-___Running the ROS Driver, Robot IP:192.168.1.201 ___
+## 4. MoveGroup example 
+Start RViz and MoveGroup node
+
+Open two shells. Start RViz and wait for everything to finish loading in the first shell:
+```
+roslaunch ur10e_moveit_config demo.launch
+```
+
+Another shell
+```
+rosrun unity_universal_robots move_group_joint_state.py
+```
+
+## 5. Running Unity control UR10e Robot
+
+___Running the ROS Driver, Robot IP:192.168.1.201___
 ```
 roslaunch ur_robot_driver ur10e_bringup.launch robot_ip:=192.168.1.201 
 ```

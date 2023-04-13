@@ -64,7 +64,7 @@ class MoveGroupPythonJointState(object):
         ## Instantiate a `PlanningSceneInterface`_ object.
         scene = moveit_commander.PlanningSceneInterface()
         ## This interface can be used to plan and execute motions:
-        group_name = "panda_arm"
+        group_name = "manipulator"
         move_group = moveit_commander.MoveGroupCommander(group_name)
         ## Create a `DisplayTrajectory`_ ROS publisher which is used to display
         ## trajectories in Rviz:
@@ -122,7 +122,7 @@ class MoveGroupPythonJointState(object):
         joint_goal[3] = -tau / 4
         joint_goal[4] = 0
         joint_goal[5] = tau / 6  # 1/6 of a turn
-        joint_goal[6] = 0
+    
 
         # The go command can be called with joint values, poses, or without any
         # parameters if you have already set the pose or joint target for the group
