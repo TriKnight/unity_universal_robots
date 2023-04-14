@@ -62,9 +62,23 @@ ___Running the ROS Driver, Robot IP:192.168.1.201___
 ```
 roslaunch ur_robot_driver ur10e_bringup.launch robot_ip:=192.168.1.201 
 ```
+___Running the RViz___
+```
+roslaunch ur10e_moveit_config ur10e_moveit_planning_execution.launch limited:=true 
+```
+
+___Nextstep running the Moveit! config with RViz view___
+```
+roslaunch dense_grasp ur10_rviz.launch
+```
+
 ___Running the TCP/IP server___
 ```
 roslaunch unity_universal_robots start_tcp_ip.launch
 ```
 ___Running the Position control___
-```rosrun unity_universal_robots pos_joints_control.py```
+```
+rosrun unity_universal_robots pos_joints_control.py
+```
+
+
