@@ -1,7 +1,15 @@
-# Unity and UR Digital Twin Application based on ROS (*Under development*)
+# Unity and UR Digital Twin Application based on ROS (*Project under development*)
+
+[![license - apache 2.0](https://img.shields.io/:license-Apache%202.0-yellowgreen.svg)](https://opensource.org/licenses/Apache-2.0)
+[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
+
 This repository contains a collection of ROS packages and a Unity package, which shows the basic example of communication between Unity and a UR10e robot throughout the ROS connection. 
-This includes two demonstrations: Unity control UR robot by publishing the joint position control signal (left video)  and the UR robot publishes the /joint_state topic to Unity (right video).
-|[![Unity control UR robot via ROS](https://img.youtube.com/vi/s2j93Ihb4DU/sddefault.jpg)](https://www.youtube.com/watch?v=s2j93Ihb4DU&t=2s)|[![UR robot pushlish the /joint_state toppic to Unity](https://img.youtube.com/vi/X9TOy9JnVtA/sddefault.jpg)](https://www.youtube.com/watch?v=X9TOy9JnVtA)|
+Please check the two demonstrations videos following 
+
+___Unity control UR robot by publishing the joint position control signal___   
+|[![Unity control UR robot via ROS](https://img.youtube.com/vi/s2j93Ihb4DU/sddefault.jpg)](https://www.youtube.com/watch?v=s2j93Ihb4DU&t=2s)|
+___The UR robot publishes the /joint_state topic to Unity___
+[![UR robot pushlish the /joint_state toppic to Unity](https://img.youtube.com/vi/X9TOy9JnVtA/sddefault.jpg)](https://www.youtube.com/watch?v=X9TOy9JnVtA)|
 
 ## 1.Installation: 
 ___1.1 Install Universal Robot ROS driver___ 
