@@ -11,6 +11,7 @@ ___Demo1: Unity control UR robot by publishing the joint position control signal
 
 ___Demo2: The UR robot publishes /joint_state topic to Unity___
 [![UR robot pushlish the /joint_state toppic to Unity](https://img.youtube.com/vi/X9TOy9JnVtA/sddefault.jpg)](https://www.youtube.com/watch?v=X9TOy9JnVtA)|
+---
 
 ## 1.Installation: 
 ___1.1 Install Universal Robot ROS driver___ 
@@ -33,7 +34,7 @@ git clone https://github.com/TriKnight/unity_universal_robots
 cd catkin_ws
 catkin build
 ```
-
+---
 
 
 ## 2.Usage with Gazebo Simulation 
@@ -58,6 +59,7 @@ ___2.3 For starting up RViz with a configuration including the MoveIt! Motion Pl
 
 ```roslaunch ur10e_moveit_config moveit_rviz.launch```
 
+---
 
 ## 3. MoveGroup example 
 ___3.1 Start RViz and MoveGroup node___
@@ -72,8 +74,10 @@ This code will help the robot move by following joint state positions and desire
 ```
 rosrun unity_universal_robots move_group_joint_state.py
 ```
-
+---
 ## 4. Running Unity control UR10e Robot
+<details>
+<summary> Show more  </summary>
 
 ___4.1. Running the ROS Driver, Robot_IP: ```<your_robot_IP>```___
 ```
@@ -106,5 +110,5 @@ ___4.6. Running the Joint State Position control___
 ```
 rosrun unity_universal_robots pos_joints_control.py
 ```
-
+</details>
 
