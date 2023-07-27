@@ -13,7 +13,19 @@ ___Demo2: The UR robot publishes /joint_state topic to Unity___
 [![UR robot pushlish the /joint_state toppic to Unity](https://img.youtube.com/vi/X9TOy9JnVtA/sddefault.jpg)](https://www.youtube.com/watch?v=X9TOy9JnVtA)|
 ---
 
-## 1.Installation: 
+## 1.Installation
+<details>
+<summary> Show more </summary>
+Softwares and packages are using in this project
+
+| Name  |  Version |
+|---|---|
+| Unity Hub |  3.4.2 |
+| Unity  |  2021.3.18f1 |
+| Ubuntu  |  20.04|
+| ROS  |  Noetic|
+
+
 ___1.1 Install Universal Robot ROS driver___ 
 
 https://github.com/UniversalRobots/Universal_Robots_ROS_Driver
@@ -25,19 +37,24 @@ https://github.com/Unity-Technologies/Unity-Robotics-Hub/tree/main/tutorials/ros
 ___1.3 Following Moveit Tutorial___
 
 https://ros-planning.github.io/moveit_tutorials/doc/move_group_python_interface/move_group_python_interface_tutorial.html
+
 https://moveit.ros.org/documentation/concepts/
 
-___1.4 Gitclone and building ```unit_universal_robot``` ROS package___
+___1.4 Gitclone and building ```unity_universal_robot``` ROS package___
 
 ```
 git clone https://github.com/TriKnight/unity_universal_robots
 cd catkin_ws
 catkin build
 ```
+</details>
+
 ---
 
 
-## 2.Usage with Gazebo Simulation 
+## 2.Running Gazebo simulation   
+<details>
+<summary> Show more </summary>
 There are launch files available to bringup a simulated robot - either UR5e or UR10e.  In the following the commands for the UR10e are given. For the UR5, simply replace the prefix accordingly.  
 
 ___2.1 To bring up the simulated robot in Gazebo, run:___
@@ -58,10 +75,14 @@ ___2.3 For starting up RViz with a configuration including the MoveIt! Motion Pl
 
 
 ```roslaunch ur10e_moveit_config moveit_rviz.launch```
+</details>
 
 ---
 
-## 3. MoveGroup example 
+## 3. Running MoveGroup example 
+<details>
+<summary> Show more </summary>
+
 ___3.1 Start RViz and MoveGroup node___
 
 Open two shells. Start RViz and wait for everything to finish loading in the first shell:
@@ -74,8 +95,11 @@ This code will help the robot move by following joint state positions and desire
 ```
 rosrun unity_universal_robots move_group_joint_state.py
 ```
+</details>
+
 ---
-## 4. Running Unity control UR10e Robot
+
+## 4. Running Unity with UR10e robot
 <details>
 <summary> Show more  </summary>
 
